@@ -20,7 +20,7 @@
 $fontFamily: "TildaSans";
 $second-family: "CocomatPro", sans-serif;
 $third-family: "Montserrat", sans-serif;
-$fontSize: toRem(14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontSize: toRem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
 $mainColor: #fff; // Цвет шрифта по умолчанию
@@ -164,4 +164,7 @@ body {
 @import "footer";
 
 // Подключение стилей отдельных страниц
-@import "home";
+@import "main";
+@import "news";
+@import "projects";
+@import "questions";

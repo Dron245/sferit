@@ -39,10 +39,23 @@
 	// .menu__item
 	&__item {
 	}
+	
 	// .menu__link
 	&__link {
 		@media (max-width: $mobile) {
 		}
+	}
+
+	&__top {
+	}
+
+	&__sub-list {
+	}
+
+	&__sub-item {
+	}
+
+	&__sub-link {
 	}
 }
 

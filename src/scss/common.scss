@@ -1,1 +1,58 @@
 // Заголовки, общие БЄМ блоки и прочее...
+.detailed {
+	display: inline-flex;
+	align-items: center;
+
+	&>* {
+		display: grid;
+		place-items: center;
+		padding: toRem(20) toRem(40);
+		background-color: $main-green;
+		font-weight: 600;
+		font-size: 1.25rem;
+		line-height: 120%;
+		border-radius: 0.75rem;
+	}
+
+	&__text {}
+
+	&__img {}
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: toRem(15);
+}
+
+.top-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include adaptiveValue("margin-bottom", 40, 26, 0, 1420, 375);
+	&__title {
+		font-family: $second-family;
+		font-weight: 500;
+		@include adaptiveValue("font-size", 36, 24, 0, 1420, 375);
+		line-height: 90%;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		position: relative;
+		&::after{
+			content:'';
+			position: absolute;
+			right: -1.25rem;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 0.5rem;
+			aspect-ratio: 1/1;
+			border-radius: 50%;
+			background-color: $main-green;
+		}
+	}
+
+	&__button {}
+
+	&__img {}
+}
