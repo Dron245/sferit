@@ -7,6 +7,11 @@ window.addEventListener('DOMContentLoaded', () => {
 	document.addEventListener('click', documentActions);
 	function documentActions(e) {
 		const targetElement = e.target;
+		console.log(targetElement);
+		if (targetElement.closest('.search__toggle')) {
+			const searchWrapper = targetElement.closest('.search__wrapper');
+			searchWrapper.classList.toggle('_active-search');
+		}
 	}
 
 	// плавное открытие саб меню в мобилке
@@ -20,8 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 	//Показываем/скрываем саб меню
-	const qwe  =document.querySelectorAll('.menu__item')
-	console.log(qwe);
+	
 	document.querySelectorAll('.menu__item').forEach((item) => {
 		const link = item.querySelector('.menu__link');
 		const submenu = item.querySelector('.menu__sub-list');
@@ -39,22 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
-	//Анимация поиска
-	const search = document.getElementById('search');
-	const toggle = document.getElementById('search-toggle');
-	const input = search.querySelector('.search__input');
-
-	toggle.addEventListener('click', () => {
-		const isActive = search.classList.toggle('search--active');
-		toggle.classList.toggle('search__toggle--search', !isActive);
-		toggle.classList.toggle('search__toggle--close', isActive);
-
-		if (isActive) {
-			input.focus();
-		} else {
-			input.value = '';
-		}
-	});
 	//Валидация формы
 	document
 		.getElementById('contact-form')

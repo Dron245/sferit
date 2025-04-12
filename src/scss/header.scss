@@ -1,50 +1,223 @@
 .header {
+	background-color: $main-grey;
 
 	&__container {
+		border-bottom: 0.0625rem solid rgba(235, 236, 236, 0.1);
 	}
 
 	&__top {
+		padding-block: 1.25rem;
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		@media (max-width: $tablet) {
+			row-gap: toRem(13);
+		}
+		@media (max-width: $mobile) {
+			padding-block: 0.5rem;
+		}
+		@media (max-width: toEm(590)) {
+			&:has(._active-search) {
+				.header__logo {
+					display: none;
+				}
+			}
+		}
 	}
 
 	&__logo {
+		@include adaptiveValue("width", 130, 95, 0, 768, 375);
+		margin-right: 1.875rem;
+		flex: 0 0 8.125rem;
+		position: relative;
+		z-index: 3;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		@media (max-width: $mobile) {
+			flex: 0 0 6.25rem;
+		}
 	}
 
 	&__info {
+		flex: 0 0 15.625rem;
+		font-size: toRem(13);
+		color: $mainColorgray;
+		font-weight: 500;
+		position: relative;
+		z-index: 3;
+		@media (max-width: $mobileSmall) {
+			font-size: toRem(12);
+		}
+		@media (max-width: $tablet) {
+			flex: 1 0 100%;
+		}
 	}
 
 	&__search {
+		position: relative;
+		z-index: 3;
+	}
+
+	&__user {
+		display: grid;
+		place-items: center;
+		width: 2.8125rem;
+		aspect-ratio: 1/1;
+		background: #353433;
+		border-radius: 2.25rem;
+		@media (max-width: $mobileSmall) {
+			width: 2.5rem;
+		}
 	}
 
 	&__contacts {
+		display: grid;
+		gap: toRem(10);
+		flex: 0 1 auto;
+		@media (min-width:$mobile){
+			@include adaptiveValue("margin-left", 80, 10, 0, 1440, 992);
+			text-align: end;
+		}
+		@media (max-width: $mobile) {
+			position: fixed;
+			bottom: 0;
+			padding-top: 1.5625rem;
+			padding-bottom: 3.125rem;
+			background-color: $main-grey;
+			&::before{
+				content:'';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 1000%;
+				height: 0.0625rem;
+				background-color: rgba(235, 236, 236, 0.1);
+				z-index: 3;
+			}
+		}
+	}
+
+	&__da {
+		@media (max-width: $tablet) {
+			margin-bottom: 1.25rem;
+		}
 	}
 
 	&__bottom {
+		@media (min-width: $mobile) {
+			padding-block: 1.25rem;
+		}
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 1000%;
+			height: 0.0625rem;
+			background-color: rgba(235, 236, 236, 0.1);
+			z-index: 3;
+		}
 	}
 
 	&__menu {
 	}
 }
+
 .search {
+	margin-left: auto;
+	display: flex;
+	gap: 0.625rem;
+	align-items: center;
+	@media (max-width: $mobile) {
+		gap: 0.75rem;
+		margin-right: 2.8125rem;
+	}
+	&__wrapper {
+		position: relative;
+		width: 2.8125rem;
+		height: 2.8125rem;
+		background: #353433;
+		border-radius: 2.25rem;
+		transition: width 0.4s;
+		@media (max-width: $mobileSmall) {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+		&._active-search {
+			@include adaptiveValue("width", 600, 300, 0, 1420, 992);
+			@include adaptiveValue("width", 400, 200, 0, 991, 375);
+		}
+	}
 
 	&__input {
+		height: 100%;
+		padding: 0 0.625rem;
+		&::placeholder {
+			opacity: 0;
+			._active-search & {
+				opacity: 1;
+			}
+		}
 	}
 
 	&__toggle {
+		img {
+			width: 1.125rem;
+			height: auto;
+			@media (max-width: $mobileSmall) {
+				width: 0.9375rem;
+			}
+		}
 	}
 
 	&__toggle--search {
 	}
+
+	&__lupa {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		._active-search & {
+			display: none;
+		}
+	}
+
+	&__close {
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: 0.875rem;
+		transform: translate(-50%, -50%);
+		._active-search & {
+			display: block;
+		}
+	}
 }
 .contacts-header {
-
+	
 	&__phone {
+		font-weight: 700;
+		white-space: nowrap;
+		@include adaptiveValue("font-size", 24, 18, 0, 1440, 768);
+		@media (max-width: $mobile) {
+			font-size: toRem(36);
+		}
 	}
 
 	&__mail {
+		font-weight: 500;
+		font-size: 0.875rem;
+		color: $mainColorgray;
+		@media (max-width: $mobile) {
+			font-size: toRem(24);
+		}
 	}
 }
 .menu {
-
 	&__icon {
 	}
 

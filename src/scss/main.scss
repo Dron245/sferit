@@ -1,24 +1,41 @@
 //====================================================================================================
 .page {
-
 	&__main {
 	}
 }
 .main {
-
+	background-color: $main-grey;
 	&__container {
+		position: relative;
+		@include adaptiveValue("padding-top", 50, 30, 0, 1440, 375);
 	}
 
+	&__decor {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 	&__slogan {
+		font-family: $second-family;
+		@include adaptiveValue("font-size", 82, 36, 0, 1440, 375);
+		font-weight: 500;
+		line-height: 0.98;
+		text-align-last: right;
+		span {
+			color: $main-green;
+		}
 	}
 
 	&__slider {
+		padding-top: toRem(40);
 	}
 
 	&__wrapper {
 	}
 
 	&__slide {
+		cursor: pointer;
 	}
 
 	&__controls {
@@ -31,7 +48,6 @@
 	}
 
 	&__arrow {
-
 		&_prev {
 		}
 
@@ -47,17 +63,31 @@
 .swiper-wrapper {
 }
 .slide {
-
 	&__img {
+		height: 330px;
 	}
-
-	&__decor {
+	&__server {
+		width: 100%;
+		object-fit: contain;
+		height: 100%;
 	}
 
 	&__bottom {
+		padding: 30px;
+		margin: auto;
+		text-align: center;
+		border: 1px solid $main-ligth-grey;
+		border-radius: 16px;
+		width: 21.458333%; /* 309/1440 */
 	}
 
 	&__title {
+		font-weight: 600;
+		font-size: 20px;
+
+		/* line-height: 22px; */
+		line-height: 110%;
+		letter-spacing: 0.02em;
 	}
 
 	&__text {
@@ -71,9 +101,7 @@
 .pagination {
 }
 .bottom-main {
-
 	&__block {
-
 		&_left {
 		}
 
@@ -100,7 +128,6 @@
 	}
 }
 .detailed {
-
 	&__text {
 	}
 
