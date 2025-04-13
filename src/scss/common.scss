@@ -29,12 +29,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	color: $main-grey;
 	@include adaptiveValue("margin-bottom", 40, 26, 0, 1420, 375);
 	&__title {
 		font-family: $second-family;
 		font-weight: 500;
 		@include adaptiveValue("font-size", 36, 24, 0, 1420, 375);
-		line-height: 90%;
 		letter-spacing: 0.01em;
 		text-transform: uppercase;
 		position: relative;
@@ -51,7 +51,19 @@
 		}
 	}
 
+	&__watch {
+		font-size: toRem(14);
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-right: 15px;
+		@media (max-width:$mobileSmall){
+			 display: none; 
+		}
+	}
+
 	&__button {}
 
-	&__img {}
+	&__img {
+
+	}
 }

@@ -11,21 +11,21 @@
 		display: grid;
 		grid-template-columns: 52.2% 35%;
 		justify-content: space-between;
-		gap: 10px;
+		gap: 0.625rem;
 		// @include adaptiveValue("gap", 185, 30, 0, 1140, 768);
 		@media (max-width: $tablet) {
 			grid-template-columns: 1fr;
-			row-gap: 60px;
+			row-gap: 3.75rem;
 		}
 		@media (max-width: $mobile) {
 			grid-template-columns: 1fr;
-			row-gap: 30px;
+			row-gap: 1.875rem;
 		}
 	}
 	&__menus {
 		display: flex;
 		justify-content: space-between;
-		gap: 10px;
+		gap: 0.625rem;
 		@media (max-width:$tablet){
 			justify-content: space-around;
 			// gap: 20%;
@@ -33,7 +33,7 @@
 		@media (max-width:$mobileSmall){
 			 justify-content: start;
 			 flex-direction: column;
-			 row-gap: 30px;
+			 row-gap: 1.875rem;
 		}
 	}
 
@@ -50,7 +50,7 @@
 	}
 
 	&__left {
-		max-width: 217px;
+		max-width: 13.5625rem;
 	}
 
 	&__logo {
@@ -60,11 +60,11 @@
 	}
 
 	&__description {
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 
 	&__contacts {
-		max-width: 330px;
+		max-width: 20.625rem;
 		@media (max-width:$tablet){
 			text-align: end;
 		}
@@ -75,13 +75,13 @@
 
 	&__contacts-phone {
 		font-weight: 500;
-		@include adaptiveValue("font-size", 40, 24, 0, 1440, 768);
-		margin-bottom: 15px;
+		@include adaptiveValue("font-size", 40, 24, 0, 1420, 768);
+		margin-bottom: 0.9375rem;
 	}
 
 	&__contacts-email {
-		@include adaptiveValue("font-size", 24, 16, 0, 1440, 768);
-		margin-bottom: 40px;
+		@include adaptiveValue("font-size", 24, 16, 0, 1420, 768);
+		margin-bottom: 2.5rem;
 		@media (max-width:$mobileSmall){
 			 margin-bottom: toRem(20); 
 		}
@@ -91,7 +91,7 @@
 		color: $text-grey;
 	}
 	&__menu {
-		max-width: 210px;
+		max-width: 13.125rem;
 	}
 
 	&__menu-item {
@@ -102,7 +102,7 @@
 
 	&__menu-link {
 		font-weight: 600;
-		@include adaptiveValue("font-size", 20, 16, 0, 1440, 768);
+		@include adaptiveValue("font-size", 20, 16, 0, 1420, 768);
 		transition: color 0.3s;
 		@media (any-hover: hover){
 			&:hover{
@@ -112,7 +112,7 @@
 	}
 
 	&__sub-menu {
-		margin-top: 30px;
+		margin-top: 1.875rem;
 	}
 
 	&__sub-menu-item {
@@ -122,7 +122,7 @@
 	}
 
 	&__sub-menu-link {
-		@include adaptiveValue("font-size", 16, 14, 0, 1440, 768);
+		@include adaptiveValue("font-size", 16, 14, 0, 1420, 768);
 		transition: color 0.3s;
 		@media (any-hover: hover){
 			&:hover{
@@ -135,11 +135,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		@include adaptiveValue("margin-top", 100, 30, 0, 1440, 375);
+		@include adaptiveValue("margin-top", 100, 30, 0, 1420, 375);
 		@media (max-width:$mobile){	 
 			flex-direction: column;
 			align-items: start;
-			gap: 30px;
+			gap: 1.875rem;
 		}
 	}
 
@@ -172,7 +172,7 @@
 		margin-top: toRem(10);
 		display: flex;
 		align-items: center;
-		gap: 10px;
+		gap: 0.625rem;
 		p {
 			font-family: $third-family;
 			font-size: toRem(26);

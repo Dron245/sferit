@@ -33,7 +33,7 @@
 	&__slogan {
 		font-family: $second-family;
 		position: relative;
-		@include adaptiveValue("font-size", 82, 36, 0, 1440, 375);
+		@include adaptiveValue("font-size", 82, 36, 0, 1420, 375);
 		font-weight: 500;
 		line-height: 0.98;
 		// text-align-last: right;
@@ -151,7 +151,7 @@
 		// border: 0.0625rem solid $mainColorgray;
 		outline-offset: -0.0625rem;
 		border-radius: 1rem;
-		width: 21.458333%; /* 309/1440 */
+		width: 21.458333%; /* 309/1420 */
 		position: relative;
 		width: 19.375rem;
 		height: 12.25rem;
@@ -220,7 +220,7 @@
 
 		&_right {
 			display: flex;
-			@include adaptiveValue("gap", 80, 20, 0, 1440, 768);
+			@include adaptiveValue("gap", 80, 20, 0, 1420, 768);
 			@media (max-width:$mobile){	 
 				justify-content: space-between;
 				margin-top: toRem(20); 

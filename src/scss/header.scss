@@ -77,7 +77,7 @@
 		gap: toRem(10);
 		flex: 0 1 auto;
 		@media (min-width:$mobile){
-			@include adaptiveValue("margin-left", 80, 10, 0, 1440, 992);
+			@include adaptiveValue("margin-left", 80, 10, 0, 1420, 992);
 			text-align: end;
 		}
 		@media (max-width: $mobile) {
@@ -206,7 +206,7 @@
 	&__phone {
 		font-weight: 700;
 		white-space: nowrap;
-		@include adaptiveValue("font-size", 24, 18, 0, 1440, 768);
+		@include adaptiveValue("font-size", 24, 18, 0, 1420, 768);
 		@media (max-width: $mobile) {
 			font-size: toRem(36);
 		}
