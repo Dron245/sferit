@@ -1,23 +1,45 @@
 .page {
-
 	&__questions {
+		@include adaptiveValue("padding-block", 100, 40, 0, 1420, 768);
 	}
 }
 .questions {
-
 	&__container {
+		@include adaptiveValue("padding", 60, 20, 0, 1420, 768);
+		background-color: $main-grey;
+		border-radius: 32px;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $mobile) {
+			border-radius: 16px;
+		}
 	}
 
 	&__content {
+		flex: 0 0 400px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__title {
+		font-family: $second-family;
+		@include adaptiveValue("font-size", 48, 36, 0, 1420, 768);
+		font-weight: 500;
+		&:not(:last-child) {
+			margin-bottom: toRem(20);
+		}
 	}
 
 	&__text {
+		@include adaptiveValue("font-size", 20, 16, 0, 1420, 768);
 	}
 
 	&__bottom {
+		margin-top: auto;
+		display: grid;
+		grid-template-columns: 90px 1fr;
+		align-items: center;
+		gap: 10px;
 	}
 
 	&__img {
@@ -27,22 +49,46 @@
 	}
 
 	&__name {
+		font-weight: 500;
+		line-height: 1.2;
+		@include adaptiveValue("font-size", 24, 18, 0, 1420, 768);
+		&:not(:last-child) {
+			margin-bottom: toRem(5);
+		}
 	}
 
 	&__position {
+		line-height: 120%;
+		color: #6f6e6e;
+		@include adaptiveValue("font-size", 16, 12, 0, 1420, 768);
 	}
 
 	&__form {
 	}
 }
 .form-questions {
+	flex: 0 0 640px;
 
 	&__body {
+		display: grid;
+		gap: 20px;
 	}
 
 	&__input {
+		border: 1px solid #5d5c5b;
+		border-radius: 12px;
+		padding: 20px 30px;
 	}
 
+	&__textarea {
+		border: 1px solid #5d5c5b;
+		border-radius: 12px;
+		padding: 20px 30px;
+		height: 146px;
+		&::placeholder {
+			color: #5d5c5b;
+		}
+	}
 	&__bottom {
 	}
 
@@ -55,4 +101,3 @@
 	&__link {
 	}
 }
-
