@@ -38,6 +38,9 @@
 		letter-spacing: 0.01em;
 		text-transform: uppercase;
 		position: relative;
+		@media (max-width: toEm(640)) {
+			width: min-content;
+		}
 		&::after{
 			content:'';
 			position: absolute;

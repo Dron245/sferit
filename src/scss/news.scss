@@ -7,9 +7,7 @@
 }
 .news {
 	&__container {
-		@media (max-width:$mobile){	 
-			padding-right: 0; 
-		}
+		
 	}
 
 	&__top {
@@ -22,6 +20,9 @@
 .items-news {
 	display: flex;
 	overflow-x: auto;
+	@media (max-width:$mobile){	 
+		margin-right: -1.25rem; 
+	}
 	&__item {
 		position: relative;
 		&:not(:last-child) {
