@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	@@include('html/_head.htm',{ "title":"HomePage" })
 	<body>
 		<div class="wrapper">
@@ -7,70 +7,65 @@
 			<main class="page">
 				<section class="page__main main">
 					<div class="main__container">
-						<img src="@img/main/decor.png" class="main__decor" alt="Image">
+						<img src="@img/main/decor.png" class="main__decor" alt="Image" />
 						<p class="main__slogan">
-							Создаем <span>и обеспечиваем бесперебойную работу</span><br> вашей
-							ИТ-инфраструктуры
+							Создаем <span class="main__slogan_blue">и обеспечиваем бесперебойную работу</span><br />
+							<span class="main__slogan_last">вашей ИТ-инфраструктуры</span>
 						</p>
 						<div class="main__slider swiper">
 							<div class="main__wrapper swiper-wrapper">
 								<div class="main__slide slide swiper-slide">
+									<a href="#" class="slide__info"><img src="@img/main/info.svg" alt="Image"></a>
 									<div class="slide__img">
 										<img class="slide__server" src="@img/main/1.png" alt="SFX14000-BSRV-12U" />
-										
 									</div>
 									<div class="slide__bottom">
+										<div class="slide__decor"></div>
 										<h3 class="slide__title">SFX14000-BSRV-12U</h3>
-										<p class="slide__text">
-											Система безопасности, автоматизации и диспетчеризации
-										</p>
+										<p class="slide__text">Система безопасности и диспетчеризации</p>
 										<a href="#" class="slide__button">Подробнее</a>
 									</div>
 								</div>
 								<div class="main__slide slide swiper-slide">
+									<a href="#" class="slide__info"><img src="@img/main/info.svg" alt="Image"></a>
 									<div class="slide__img">
 										<img class="slide__server" src="@img/main/2.png" alt="Сервер 2" />
-										
 									</div>
 									<div class="slide__bottom">
+										<div class="slide__decor"></div>
 										<h3 class="slide__title">Сервер 2</h3>
-										<p class="slide__text">
-											Отличный надёжный и очень красивый сервер
-										</p>
+										<p class="slide__text">Отличный надёжный и очень красивый сервер</p>
 										<a href="#" class="slide__button">Подробнее</a>
 									</div>
 								</div>
 								<div class="main__slide slide swiper-slide">
+									<a href="#" class="slide__info"><img src="@img/main/info.svg" alt="Image"></a>
 									<div class="slide__img">
-										<img class="slide__server" src="@img/main/3.png" alt="Сервер 3" />
-										
+										<img class="slide__server" src="@img/main/1.png" alt="Сервер 3" />
 									</div>
 									<div class="slide__bottom">
+										<div class="slide__decor"></div>
 										<h3 class="slide__title">Сервер 3</h3>
-										<p class="slide__text">
-											Прекрасно работает, очень быстрый и надёжный
-										</p>
+										<p class="slide__text">Прекрасно работает, очень быстрый и надёжный</p>
 										<a href="#" class="slide__button">Подробнее</a>
 									</div>
 								</div>
 							</div>
 							<div class="main__controls">
+								<div class="main__arrow main__arrow_prev">
+									<img src="@img/main/arrow-slider.svg" alt="назад" />
+								</div>
 								<div class="main__pagination pagination"></div>
-								<div class="main__arrows">
-									<div class="main__arrow main__arrow_prev">
-										<img src="@img/main/arrow-slider.svg" alt="назад" />
-									</div>
-									<div class="main__arrow main__arrow_next">
-										<img src="@img/main/arrow-slider.svg" alt="вперед" />
-									</div>
+								<div class="main__arrow main__arrow_next">
+									<img src="@img/main/arrow-slider.svg" alt="вперед" />
 								</div>
 							</div>
 						</div>
 						<div class="main__bottom bottom-main">
 							<div class="bottom-main__block bottom-main__block_left">
 								<h1 class="bottom-main__title">
-									Разработчик и производитель оборудования для систем
-									безопасности, автоматизации и диспетчеризации
+									Разработчик и производитель оборудования для систем безопасности, автоматизации и
+									диспетчеризации
 								</h1>
 								<a href="#" class="bottom-main__button detailed">
 									<span class="detailed__text">Подробнее</span>
@@ -79,36 +74,14 @@
 									</span>
 								</a>
 							</div>
-							<div
-								data-watch
-								class="bottom-main__block bottom-main__block_right"
-							>
+							<div data-watch class="bottom-main__block bottom-main__block_right">
 								<div class="bottom-main__achievement">
-									<span
-										data-digits-counter
-										data-digits-counter-format
-										data-digits-counter-speed="2000"
-										class="bottom-main__number"
-										>3 000</span
-									>
-									<span class="bottom-main__sign">&nbsp;+</span>
-									<p class="bottom-main__text">
-										объектов оснащено нашим оборудованием
-									</p>
+									<span class="bottom-main__number">3 000+</span>
+									<p class="bottom-main__text">объектов <br> оснащено нашим оборудованием</p>
 								</div>
 								<div class="bottom-main__achievement">
-									<span class="bottom-main__sign">>&nbsp;</span>
-									<span
-										data-digits-counter
-										data-digits-counter-format
-										data-digits-counter-speed="2000"
-										class="bottom-main__number"
-										>1 000</span
-									>
-									<span class="bottom-main__sign">&nbsp;+</span>
-									<p class="bottom-main__text">
-										партнеров реализовывающих наше оборудование
-									</p>
+									<span class="bottom-main__number">> 1 000</span>
+									<p class="bottom-main__text">партнеров реализовывающих наше оборудование</p>
 								</div>
 							</div>
 						</div>
@@ -120,11 +93,7 @@
 							<h2 class="top-block__title">Новости</h2>
 							<a href="#" class="top-block__button">
 								<span class="top-block__title">Смотреть всё</span>
-								<img
-									class="top-block__img"
-									src="@img/main/detailed-arrow.svg"
-									alt="Image"
-								/>
+								<img class="top-block__img" src="@img/main/detailed-arrow.svg" alt="Image" />
 							</a>
 						</div>
 						<div class="news__items items-news">
@@ -140,11 +109,7 @@
 											Рекомендации по выбору IP-видеокамер СферИТ серии P
 										</p>
 									</div>
-									<img
-										class="item-news__arrow"
-										src="@img/main/detailed-arrow.svg"
-										alt=""
-									/>
+									<img class="item-news__arrow" src="@img/main/detailed-arrow.svg" alt="" />
 								</div>
 							</article>
 							<article class="items-news__item item-news">
@@ -154,15 +119,9 @@
 								<div class="item-news__content">
 									<div class="item-news__bottom">
 										<p class="item-news__date">27.06.2024</p>
-										<p class="item-news__text">
-											Видеосерверы в условиях ограничений
-										</p>
+										<p class="item-news__text">Видеосерверы в условиях ограничений</p>
 									</div>
-									<img
-										class="item-news__arrow"
-										src="@img/main/detailed-arrow.svg"
-										alt=""
-									/>
+									<img class="item-news__arrow" src="@img/main/detailed-arrow.svg" alt="" />
 								</div>
 							</article>
 							<article class="items-news__item item-news">
@@ -172,15 +131,9 @@
 								<div class="item-news__content">
 									<div class="item-news__bottom">
 										<p class="item-news__date">27.06.2024</p>
-										<p class="item-news__text">
-											Видеосерверы в условиях ограничений
-										</p>
+										<p class="item-news__text">Видеосерверы в условиях ограничений</p>
 									</div>
-									<img
-										class="item-news__arrow"
-										src="@img/main/detailed-arrow.svg"
-										alt=""
-									/>
+									<img class="item-news__arrow" src="@img/main/detailed-arrow.svg" alt="" />
 								</div>
 							</article>
 						</div>
@@ -192,11 +145,7 @@
 							<h2 class="top-block__title">Реализованные проекты</h2>
 							<a href="#" class="top-block__button">
 								<span class="top-block__title">Смотреть всё</span>
-								<img
-									class="top-block__img"
-									src="@img/main/detailed-arrow.svg"
-									alt="Image"
-								/>
+								<img class="top-block__img" src="@img/main/detailed-arrow.svg" alt="Image" />
 							</a>
 						</div>
 						<div class="projects__content">
@@ -209,17 +158,15 @@
 										IP-видеонаблюдение в бизнес центре B+. 81 IP-камера
 									</h4>
 									<p class="item-project__text">
-										Знак признания высокого качества и надежности продукции
-										компании СферИТ, а также удостоверение ее соответствия
-										строгим требованиям в области безопасности.
+										Знак признания высокого качества и надежности продукции компании СферИТ, а также
+										удостоверение ее соответствия строгим требованиям в области безопасности.
 									</p>
 									<div class="item-project__bottom">
 										<p class="item-project__date">27.06.2024</p>
 										<img
 											class="item-project__arrow"
 											src="@img/main/detailed-arrow.svg"
-											alt="Image"
-										/>
+											alt="Image" />
 									</div>
 								</div>
 							</article>
@@ -232,17 +179,15 @@
 										IP-видеонаблюдение в бизнес центре B+. 81 IP-камера
 									</h4>
 									<p class="item-project__text">
-										Знак признания высокого качества и надежности продукции
-										компании СферИТ, а также удостоверение ее соответствия
-										строгим требованиям в области безопасности.
+										Знак признания высокого качества и надежности продукции компании СферИТ, а также
+										удостоверение ее соответствия строгим требованиям в области безопасности.
 									</p>
 									<div class="item-project__bottom">
 										<p class="item-project__date">27.06.2024</p>
 										<img
 											class="item-project__arrow"
 											src="@img/main/detailed-arrow.svg"
-											alt="Image"
-										/>
+											alt="Image" />
 									</div>
 								</div>
 							</article>
@@ -254,8 +199,7 @@
 						<div class="questions__content">
 							<h3 class="questions__title">Задать вопрос</h3>
 							<p class="questions__text">
-								Не знаете с чего начать? Мы пока тоже не знаем. Давайте
-								разберемся вместе!
+								Не знаете с чего начать? Мы пока тоже не знаем. Давайте разберемся вместе!
 							</p>
 							<div class="questions__bottom">
 								<div class="questions__img">
@@ -277,8 +221,7 @@
 									data-error="Ошибка"
 									placeholder="Ваше имя *"
 									class="form-questions__input"
-									required
-								/>
+									required />
 								<input
 									autocomplete="off"
 									id="email"
@@ -287,16 +230,14 @@
 									data-error="Ошибка"
 									placeholder="Ваш имейл *"
 									class="form-questions__input"
-									required
-								/>
+									required />
 								<input
 									autocomplete="off"
 									type="email"
 									name="form[]"
 									data-error="Ошибка"
 									placeholder="Номер телефона"
-									class="form-questions__input"
-								/>
+									class="form-questions__input" />
 								<textarea
 									autocomplete="off"
 									id="message"
@@ -304,8 +245,7 @@
 									data-error="Ошибка"
 									class="form-questions__input"
 									placeholder="Ваше сообщение"
-									required
-								>
+									required>
 								</textarea>
 								<div class="form-questions__bottom">
 									<button type="submit" class="detailed form-questions__button">
@@ -316,12 +256,10 @@
 									</button>
 									<p class="form-questions__text">
 										Нажимая кнопку «Отправить», Вы принимаете условия
+										<a href="#" class="form-questions__link">Политики конфиденциальности</a>, а
+										также даете
 										<a href="#" class="form-questions__link"
-											>Политики конфиденциальности</a
-										>, а также даете
-										<a href="#" class="form-questions__link"
-											>Согласие на обработку Ваших персональных данных и их
-											передачу.</a
+											>Согласие на обработку Ваших персональных данных и их передачу.</a
 										>
 									</p>
 								</div>
@@ -332,7 +270,6 @@
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
 	</body>
 </html>

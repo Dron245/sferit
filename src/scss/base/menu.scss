@@ -14,6 +14,7 @@
 			overflow: auto;
 			padding: toRem(140) toRem(15) toRem(15) toRem(30);
 			transition: left 0.3s;
+			z-index: 1;
 			&::before {
 				content: "";
 				position: fixed;
