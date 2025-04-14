@@ -2,18 +2,21 @@
 import { isMobile } from './functions.js';
 // Подключение списка активных модулей
 import { flsModules } from './modules.js';
-
+import InputMask from 'inputmask';
 window.addEventListener('DOMContentLoaded', () => {
 	document.addEventListener('click', documentActions);
 	function documentActions(e) {
 		const targetElement = e.target;
-		console.log(targetElement);
+		// console.log(targetElement);
 		if (targetElement.closest('.search__toggle')) {
 			const searchWrapper = targetElement.closest('.search__wrapper');
 			searchWrapper.classList.toggle('_active-search');
 		}
 	}
 
+	//Маска телефона
+	const phoneInput = document.querySelector("#phone");
+	Inputmask({ mask: "+7 (999) 999-99-99" }).mask(phoneInput);
 	// плавное открытие саб меню в мобилке
 	function toggleSubmenu(submenu, item) {
 		if (!submenu.style.maxHeight || submenu.style.maxHeight === '0px') {

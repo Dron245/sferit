@@ -7,16 +7,18 @@
 	&__container {
 		@include adaptiveValue("padding", 60, 20, 0, 1420, 768);
 		background-color: $main-grey;
-		border-radius: 32px;
+		border-radius: 2rem;
 		display: flex;
+		gap: 0.625rem;
 		justify-content: space-between;
 		@media (max-width: $mobile) {
-			border-radius: 16px;
+			border-radius: 1rem;
+			flex-direction: column;
 		}
 	}
 
 	&__content {
-		flex: 0 0 400px;
+		flex: 0 0 40%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -37,9 +39,9 @@
 	&__bottom {
 		margin-top: auto;
 		display: grid;
-		grid-template-columns: 90px 1fr;
+		grid-template-columns: 5.625rem 1fr;
 		align-items: center;
-		gap: 10px;
+		gap: 0.625rem;
 	}
 
 	&__img {
@@ -67,37 +69,49 @@
 	}
 }
 .form-questions {
-	flex: 0 0 640px;
+	flex: 0 1 auto;
 
 	&__body {
 		display: grid;
-		gap: 20px;
+		gap: 1.25rem;
 	}
 
 	&__input {
-		border: 1px solid #5d5c5b;
-		border-radius: 12px;
-		padding: 20px 30px;
+		border: 0.0625rem solid #5d5c5b;
+		border-radius: 0.75rem;
+		padding: 1.25rem 1.875rem;
 	}
 
 	&__textarea {
-		border: 1px solid #5d5c5b;
-		border-radius: 12px;
-		padding: 20px 30px;
-		height: 146px;
+		border: 0.0625rem solid #5d5c5b;
+		border-radius: 0.75rem;
+		padding: 1.25rem 1.875rem;
+		height: 9.125rem;
 		&::placeholder {
 			color: #5d5c5b;
 		}
 	}
 	&__bottom {
+		display: flex;
+		align-items: flex-start;
+		gap: 1.875rem;
+		@media (max-width: toEm(1240)) {
+			flex-direction: column;
+			  
+		}
 	}
 
 	&__button {
 	}
 
 	&__text {
+		font-size: toRem(14);
+		color: $text-grey;
 	}
 
 	&__link {
+		text-decoration: underline;
+text-decoration-skip-ink: none;
+color: $mainColor;
 	}
 }
